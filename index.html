@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Generic RPG</title>
+	<style>
+		body,
+		html,
+		canvas {
+			margin: 0;
+			padding: 0;
+		}
+		html,
+		body {
+			width: 100%;
+		}
+		#wrap {
+			width: 640px;
+			margin: 0 auto;
+			position: relative;
+			font-family: sans-serif;
+		}
+		canvas {
+			position: absolute;
+		}
+		#game-area {
+			position: relative;
+			width: 640px;
+			height: 480px;
+			margin: 0;
+			padding: 0;
+			background-color: #ccc;
+			overflow: hidden;
+		}
+		.game-image {
+			display: none;
+			visibility: hidden;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div id="game-area">
+			<canvas id="game-canvas" width="640" height="480"></canvas>
+		</div>
+	</div>
+	<img id="tiles1" class="game-image" src="assets/tiles1.png"/>
+	<script src="lib/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/example.json"></script>
+	<script type="text/javascript" src="assets/example2.json"></script>
+	<script type="text/javascript" src="js/game.js"></script>
+</body>
+</html>
